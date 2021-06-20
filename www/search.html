@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+	<link rel="stylesheet" href="components/loader.css">
+	<script src="components/loader.js"></script>
+	<script src="js/search.js"></script>
+	<script>
+		//
+        // TODO: Write JavaScript code here
+        //
+	</script>
+	<style>
+		.search_container {
+			box-sizing: border-box;
+			position: relative;
+			border: 1px solid #999;
+			padding: 3px 10px;
+			border-radius: 20px;
+			height: 2.3em;
+			width: 100%;
+			overflow: hidden;
+		}
+
+		.search_container input[type="text"] {
+			border: none;
+			height: 2.0em;
+		}
+
+		.search_container input[type="text"]:focus {
+			outline: 0;
+		}
+
+		.search_container input[type="submit"] {
+			cursor: pointer;
+			font-family: FontAwesome;
+			font-size: 1.3em;
+			border: none;
+			background: none;
+			color: #3879D9;
+			position: absolute;
+			width: 2.5em;
+			height: 2.5em;
+			right: 0;
+			top: -10px;
+			outline: none;
+		}
+
+		.home {
+			width: 70px;
+			height: 70px;
+			color: #ffffff; //background-color: #2779bd;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.5rem;
+			border-radius: 50%;
+			cursor: pointer;
+			position: absolute;
+			top: 85%;
+			left: 5%;
+		}
+
+		.search {
+			width: 70px;
+			height: 70px;
+			color: #ffffff; //background-color: #2779bd;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.5rem;
+			border-radius: 50%;
+			cursor: pointer;
+			position: absolute;
+			top: 85%;
+			left: 30%;
+		}
+
+		.plus {
+			width: 70px;
+			height: 70px;
+			color: #ffffff; //background-color: #2779bd;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.5rem;
+			border-radius: 50%;
+			cursor: pointer;
+			position: absolute;
+			top: 85%;
+			left: 55%;
+		}
+
+		.user {
+			width: 70px;
+			height: 70px;
+			color: #ffffff; //background-color: #2779bd;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.5rem;
+			border-radius: 50%;
+			cursor: pointer;
+			position: absolute;
+			top: 85%;
+			left: 80%;
+		}
+	</style>
+</head>
+
+<body>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<form method="get" action="#" class="search_container">
+		<input type="text" size="25" placeholder="キーワード検索">
+		<input type="submit" value="&#xf002">
+	</form>
+	<img src="img/search.png" class="search" onclick="search()" />
+	<img src="img/home.png" class="home" onclick="home()" />
+	<img src="img/plus.png" class="plus" onclick="imgwin('001.jpg')" />
+	<img src="img/user.png" class="user" onclick="imgwin('001.jpg')" />
+
+	<!-- TODO: Please edit here -->
+</body>
+
+</html>
